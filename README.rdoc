@@ -1,0 +1,29 @@
+= hatebu to boxcar
+
+はてなブックマークの Web Hook を受け取って Boxcar に通知する
+
+== Setup
+
+    $ git clone git@github.com:mitukiii/hatebu-to-boxcar.git
+    $ bundle install
+    $ PADRINO_ENV=production rake setup
+     ==  CreateHooks: migrating ====================================================
+     -- create_table("hooks", {})
+        -> 0.0020s
+     ==  CreateHooks: migrated (0.0023s) ===========================================
+     
+     ==  CreateBoxcars: migrating ==================================================
+     -- create_table("boxcars", {})
+        -> 0.0008s
+     ==  CreateBoxcars: migrated (0.0011s) =========================================
+     
+     Setup your Boxcar account information
+     Please enter your email address to Boxcar: <email>
+     Please enter your password to Boxcar: <password>
+     Setup complete
+
+== Copyright
+
+Copyright (C) 2011 Kazuya Takeshima
+
+Released under the WTFPL: http://sam.zoy.org/wtfpl
