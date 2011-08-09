@@ -23,7 +23,7 @@ class Hatebu < Padrino::Application
       source = @hook.permalink
       boxcar_api.notify message, title, nil, source
     when 'id_call'
-      message = "#{@hook.titke} #{@hook.comment}"
+      message = "#{@hook.title} #{@hook.comment}"
       title = "id:#{@hook.username}: id call"
       source = @hook.permalink
       boxcar_api.notify message, title, nil, source
